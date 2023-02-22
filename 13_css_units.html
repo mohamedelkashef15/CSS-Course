@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS units</title>
+
+    <style>
+        /* 
+            1. px
+
+            2. em
+            - 1em = font-size of parent element
+
+            3. rem
+            - 1rem = font-size of root element
+
+            4. %
+            - 100% is 100% of parent element
+
+            5. vw => viewport width
+
+            6. vh => viewport height
+
+        */
+
+        div {
+            font-size: 20px;
+        }
+
+        .a {
+            font-size: 30px;
+        }
+
+        /* html {
+            font-size: 20px;
+        }
+
+        .b {
+            font-size: 2rem;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .viewport {
+            background-color: red;
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <p class="a">This is a paragraph</p>
+        <p class="b">This is a paragraph</p>
+    </div> -->
+    <div class="viewport"></div>
+</body>
+
+</html>

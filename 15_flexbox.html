@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* 
+            1. display: flex
+
+            2. flex-direction
+            - row => default | row-reverse | column | column-reverse
+
+            3. flex-wrap 
+            - no-wrap => default | wrap 
+
+            4. flex-shrink: 1 => default
+
+            5. flex-grow: 0 => default
+
+            6. justify-content 
+            - flex-start | flex-end | center
+            - space-between | space-around | space-evenly
+
+            7. align-items
+            - flex-start | flex-end | center | stretch
+        */
+
+        .flexbox {
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .box {
+            background: #333;
+            color: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .box-1 {
+            /* flex-shrink: 0; */
+        }
+
+        .box-2 {
+            /* flex-grow: 1; */
+            /* width: 200px; */
+            /* flex-basis: 200px; */
+        }
+
+        .box-3 {
+            /* flex-grow: 2; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="box box-1">
+            <h3>Box 1</h3>
+        </div>
+        <div class="box box-2">
+            <h3>Box 2</h3>
+        </div>
+        <div class="box box-3">
+            <h3>Box 3</h3>
+        </div>
+
+    </div>
+</body>
+
+</html>

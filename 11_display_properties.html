@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        /* 
+            1. Display Block
+            - Takes 100% width of website
+            - respect margin & padding & width & height
+            - respect line breakp
+
+            2. Display Inline
+            - Takes width of element only
+            - don't respect width & height
+            - respect padding & margin [from left & right only]
+            - don't respect line break
+
+            3. Display Inline-Block
+            - Take width of element only
+            - don't respect line break
+            - respect margin & padding & width & height
+
+            4. Display none
+            - Removes element from HTML
+
+            5. visabilty hidden
+            - hide element from HTML 
+        */
+
+        span.a {
+            display: block;
+            background-color: yellow;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+        span.b {
+            display: inline;
+            background-color: yellow;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+        span.c {
+            display: inline-block;
+            background-color: yellow;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+        #none {
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Properties</h1>
+    <div>
+        <h2>Display Block</h2>
+        <p>Lorem ipsum dolor sit amet <span class="a"> consectetur </span> <span class="a"> adipisicing </span> elit. Tempore praesentium necessitatibus tenetur voluptates, voluptatem deserunt! Repellat, quia! Tempora expedita labore, reprehenderit possimus accusamus ex, sint aspernatur error animi nulla nobis.</p>
+    </div>
+    <div>
+        <h2>Display inline</h2>
+        <p>Lorem ipsum dolor sit amet <span class="b"> consectetur </span> <span class="b"> adipisicing </span> elit. Tempore praesentium necessitatibus tenetur voluptates, voluptatem deserunt! Repellat, quia! Tempora expedita labore, reprehenderit possimus accusamus ex, sint aspernatur error animi nulla nobis.</p>
+    </div>
+    <div>
+        <h2>Display inline-block</h2>
+        <p>Lorem ipsum dolor sit amet <span class="c"> consectetur </span> <span class="c"> adipisicing </span> elit. Tempore praesentium necessitatibus tenetur voluptates, voluptatem deserunt! Repellat, quia! Tempora expedita labore, reprehenderit possimus accusamus ex, sint aspernatur error animi nulla nobis.</p>
+    </div>
+    <div id="none">
+        <h2>Display None</h2>
+        <p>Lorem ipsum dolor sit amet <span class="d"> consectetur </span> <span class="d"> adipisicing </span> elit. Tempore praesentium necessitatibus tenetur voluptates, voluptatem deserunt! Repellat, quia! Tempora expedita labore, reprehenderit possimus accusamus ex, sint aspernatur error animi nulla nobis.</p>
+    </div>
+</body>
+</html>

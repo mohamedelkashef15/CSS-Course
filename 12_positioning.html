@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+
+        /* 
+            1. static => Default
+            - Not affected by top bottom left and right
+
+            2. relative
+
+            3. absolute
+            - affected by parent
+            
+            4. fixed
+
+            5. sticky
+        
+        */
+        body {
+            height: 3000px;
+        }
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background: #333;
+            z-index: 2;
+        }
+        .box-1 {
+            position: static;
+            top: 30px;
+            left: 30px;
+            background-color: cyan;
+            width: 100px;
+            height: 100px;
+            margin-top: 70px;
+        }
+        .box-2 {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+        }
+        .box-3 {
+            position: absolute;
+            /* top: 30px;
+            left: 30px; */
+            bottom: 30px;
+            right: 30px;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .box-4 {
+            /* position: fixed; */
+            top: 20px;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        .box-5 {
+            position: sticky;
+            top: 0;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="container">
+        <div class="box-3"></div>
+    </div>
+    <div class="box-4"></div>
+    <div class="box-5"></div>
+</body>
+</html>
