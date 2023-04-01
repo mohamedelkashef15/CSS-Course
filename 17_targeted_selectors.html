@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+    <style>
+        div p {
+            /* background-color: #bbb; */
+        }
+
+        /* Direct Child */
+        div>p {
+            background-color: #bbb;
+        }
+
+        li>p {
+            background-color: red;
+        }
+
+        /* Direct After */
+        div+p {
+            background-color: green;
+        }
+
+        /* By Attribute */
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum?</p>
+        <h4>My Skills</h4>
+        <ul>
+            <li>
+                <p>HTML</p>
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, adipisci.</p>
+    </div>
+    <p>Welcome to my profile</p>
+    <p>Welcome to my profile</p>
+    <p>Welcome to my profile</p>
+
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="number" placeholder="Phone">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

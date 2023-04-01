@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        .box {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            margin: 10px auto;
+            padding: 5px 15px;
+            position: relative;
+        }
+
+        /* span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        } */
+
+        /* After */
+        .box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+
+        /* Before */
+        .box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis!</p>
+    </div>
+    <div class="box">
+        <h2>Box 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis!</p>
+    </div>
+    <div class="box">
+        <h2>Box 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis!</p>
+    </div>
+</body>
+
+</html>

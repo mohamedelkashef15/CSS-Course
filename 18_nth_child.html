@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child</title>
+    <style>
+        ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        /* First Child */
+        ul li:first-child {
+            background-color: red;
+        }
+
+        /* Last Child */
+        ul li:last-child {
+            background-color: red;
+        }
+
+        /* Position 8 */
+        ul li:nth-child(8) {
+            background-color: green !important;
+        }
+
+        /* Every 2 */
+        ul li:nth-child(2n + 6) {
+            background-color: blue;
+        }
+
+        /* Odd */
+        ul li:nth-child(odd) {
+            background-color: orange;
+        }
+
+        /* Even */
+        ul li:nth-child(even) {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+        <li>List Item 6</li>
+        <li>List Item 7</li>
+        <li class="list-8">List Item 8</li>
+        <li>List Item 9</li>
+        <li>List Item 10</li>
+        <li>List Item 11</li>
+        <li>List Item 12</li>
+        <li>List Item 13</li>
+        <li>List Item 14</li>
+        <li>List Item 15</li>
+    </ul>
+</body>
+
+</html>

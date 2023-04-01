@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "about about about"
+                "box-1 box-1 box-1"
+                "box-2 box-2 box-3"
+                "footer footer footer"
+            ;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .about {
+            grid-area: about;
+        }
+
+        .box-1 {
+            grid-area: box-1;
+        }
+
+        .box-2 {
+            grid-area: box-2;
+        }
+
+        .box-3 {
+            grid-area: box-3;
+        }
+
+        .footer {
+            border: 1px solid #000;
+            text-align: center;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mohamed Elkashef</h1>
+        </header>
+        <section class="about">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus temporibus ipsa, cum sequi
+                voluptas, nisi ratione maxime deserunt natus amet quidem nemo minus ea distinctio nesciunt eveniet, illo
+                laboriosam!</p>
+        </section>
+        <div class="box-1">
+            <h3>HTML</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quod nostrum iusto necessitatibus
+                facere ipsum?</p>
+        </div>
+        <div class="box-2">
+            <h3>CSS</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quod nostrum iusto necessitatibus
+                facere ipsum?</p>
+        </div>
+        <div class="box-3">
+            <h3>JavaScript</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quod nostrum iusto necessitatibus
+                facere ipsum?</p>
+        </div>
+        <footer class="footer">
+            <p>&copy; All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

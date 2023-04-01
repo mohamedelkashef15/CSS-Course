@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+            /* Outside box */
+            /* h-shadow | v-shadow | blur | color */
+            box-shadow: 5px 5px 5px orange;
+            box-shadow: -5px -5px 5px orange;
+
+            /* inside box */
+            box-shadow: inset 5px 5px orange;
+            box-shadow: inset -5px -5px orange;
+
+            /* Multiple Shadow */
+            box-shadow: 3px 3px 3px blue, -3px -3px 3px blue;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #033b4a;
+            /* h-shadow | v-shadow | blur | color */
+            text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, assumenda.</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, assumenda.</p>
+        </div>
+    </div>
+    <h1>Mohamed Elkashef</h1>
+</body>
+
+</html>
